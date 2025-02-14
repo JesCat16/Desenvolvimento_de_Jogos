@@ -2,9 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class player : MonoBehaviour
+public class Bot : MonoBehaviour
 {
-    public float boundY = -8.4f;
+    public float boundY = 12.4f;
     public float fieldY = -1.19f;
     public float wallRightX = -5.5f;
     public float wallLeftX = 5f;
@@ -18,17 +18,14 @@ public class player : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Vector3 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+
         var pos = transform.position;
-        pos.x = mousePos.x;
-        pos.y = mousePos.y;
 
-
-        if (pos.y > fieldY)
+        if (pos.y < fieldY)
         {
             pos.y = fieldY;
         }
-        else if (pos.y < boundY)
+        else if (pos.y > boundY)
         {
             pos.y = boundY;
         }
@@ -41,7 +38,5 @@ public class player : MonoBehaviour
         {
             pos.x = wallLeftX;
         }
-        transform.position = pos;
-
     }
 }

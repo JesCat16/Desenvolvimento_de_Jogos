@@ -130,7 +130,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      png-clipart-national-hockey-league-hockey-field-ice-hockey-sledge-hockey-ice-rink-field-hockey-angle-text_0: -3661093168940060611
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
