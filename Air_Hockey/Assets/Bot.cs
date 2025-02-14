@@ -8,17 +8,21 @@ public class Bot : MonoBehaviour
     public float fieldY = -1.19f;
     public float wallRightX = -5.5f;
     public float wallLeftX = 5f;
+    public float velocity = 10;
+
+    private Transform locationBall;
     private Rigidbody2D rb2d;
     // Start is called before the first frame update
     void Start()
     {
+        locationBall = GameObject.FindGameObjectWithTag("ball").transform;
         rb2d = GetComponent<Rigidbody2D>();
     }
 
     // Update is called once per frame
     void Update()
     {
-
+        FollowBall();
         var pos = transform.position;
 
         if (pos.y < fieldY)
@@ -39,4 +43,10 @@ public class Bot : MonoBehaviour
             pos.x = wallLeftX;
         }
     }
+
+    private void FollowBall()
+    {
+        transform.position = Vector2.MoveTowards(transform.position, locationBall.position, velocity * Time.deltaTime);
+    }
+
 }
