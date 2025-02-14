@@ -8,7 +8,7 @@ public class Bot : MonoBehaviour
     public float fieldY = -1.19f;
     public float wallRightX = -5.5f;
     public float wallLeftX = 5f;
-    public float velocity = 10;
+    public float velocity = 5;
 
     private Transform locationBall;
     private Rigidbody2D rb2d;
@@ -23,30 +23,39 @@ public class Bot : MonoBehaviour
     void Update()
     {
         FollowBall();
+    }
+
+    private void FollowBall()
+    {
         var pos = transform.position;
 
         if (pos.y < fieldY)
         {
             pos.y = fieldY;
+            transform.position = Vector2.MoveTowards(transform.position, locationBall.position, velocity * Time.deltaTime);
         }
         else if (pos.y > boundY)
         {
             pos.y = boundY;
+            transform.position = Vector2.MoveTowards(transform.position, locationBall.position, velocity * Time.deltaTime);
         }
-
-        if (pos.x < wallRightX)
+        else if (pos.x < wallRightX)
         {
             pos.x = wallRightX;
+            transform.position = Vector2.MoveTowards(transform.position, locationBall.position, velocity * Time.deltaTime);
         }
         else if (pos.x > wallLeftX)
         {
             pos.x = wallLeftX;
+            transform.position = Vector2.MoveTowards(transform.position, locationBall.position, velocity * Time.deltaTime);
         }
-    }
-
-    private void FollowBall()
-    {
-        transform.position = Vector2.MoveTowards(transform.position, locationBall.position, velocity * Time.deltaTime);
+        else
+        {
+            if(locationBall.gameObject != null) 
+            {
+                transform.position = Vector2.MoveTowards(transform.position, locationBall.position, velocity * Time.deltaTime);
+            }
+        }
     }
 
 }
