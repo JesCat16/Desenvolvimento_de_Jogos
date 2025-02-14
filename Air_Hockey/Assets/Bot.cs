@@ -32,22 +32,18 @@ public class Bot : MonoBehaviour
         if (pos.y < fieldY)
         {
             pos.y = fieldY;
-            transform.position = Vector2.MoveTowards(transform.position, locationBall.position, velocity * Time.deltaTime);
         }
         else if (pos.y > boundY)
         {
             pos.y = boundY;
-            transform.position = Vector2.MoveTowards(transform.position, locationBall.position, velocity * Time.deltaTime);
         }
         else if (pos.x < wallRightX)
         {
             pos.x = wallRightX;
-            transform.position = Vector2.MoveTowards(transform.position, locationBall.position, velocity * Time.deltaTime);
         }
         else if (pos.x > wallLeftX)
         {
             pos.x = wallLeftX;
-            transform.position = Vector2.MoveTowards(transform.position, locationBall.position, velocity * Time.deltaTime);
         }
         else
         {
