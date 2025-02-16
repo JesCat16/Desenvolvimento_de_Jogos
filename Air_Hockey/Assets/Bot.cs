@@ -4,11 +4,11 @@ using UnityEngine;
 
 public class Bot : MonoBehaviour
 {
-    public float boundY = 12.4f;
-    public float fieldY = -1.19f;
-    public float wallRightX = -5.5f;
-    public float wallLeftX = 5f;
-    public float velocity = 5;
+    public float boundY;
+    public float fieldY;
+    public float wallRightX;
+    public float wallLeftX;
+    public float velocity;
 
     private Transform locationBall;
     private Rigidbody2D rb2d;
@@ -27,6 +27,8 @@ public class Bot : MonoBehaviour
 
     private void FollowBall()
     {
+
+        transform.position = Vector2.MoveTowards(transform.position, locationBall.position, velocity * Time.deltaTime);
         var pos = transform.position;
 
         if (pos.y < fieldY)
@@ -45,13 +47,7 @@ public class Bot : MonoBehaviour
         {
             pos.x = wallLeftX;
         }
-        else
-        {
-            if(locationBall.gameObject != null) 
-            {
-                transform.position = Vector2.MoveTowards(transform.position, locationBall.position, velocity * Time.deltaTime);
-            }
-        }
+        transform.position = pos;
     }
 
 }
