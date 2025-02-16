@@ -4,10 +4,10 @@ using UnityEngine;
 
 public class player : MonoBehaviour
 {
-    public float boundY = -8.4f;
-    public float fieldY = -1.19f;
-    public float wallRightX = -5.5f;
-    public float wallLeftX = 5f;
+    public float boundY;
+    public float fieldY;
+    public float wallRightX;
+    public float wallLeftX;
     private Rigidbody2D rb2d;
     // Start is called before the first frame update
     void Start()
