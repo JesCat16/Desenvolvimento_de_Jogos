@@ -32,15 +32,15 @@ public class Ball : MonoBehaviour
         if (coll.collider.CompareTag("Player"))
         {
             Vector2 vel;
-            vel.x = rb2d.velocity.x + coll.collider.attachedRigidbody.velocity.x;
-            vel.y = rb2d.velocity.y + coll.collider.attachedRigidbody.velocity.y;
+            vel.x = rb2d.velocity.x + coll.collider.attachedRigidbody.velocity.x * 2;
+            vel.y = rb2d.velocity.y + coll.collider.attachedRigidbody.velocity.y * 2;
             rb2d.velocity = vel;
         }
        else if (coll.collider.CompareTag("bot"))
         {
             Vector2 vel;
-            vel.x = rb2d.velocity.x + coll.collider.attachedRigidbody.velocity.x;
-            vel.y = rb2d.velocity.y + coll.collider.attachedRigidbody.velocity.y;
+            vel.x = rb2d.velocity.x + coll.collider.attachedRigidbody.velocity.x * 2;
+            vel.y = rb2d.velocity.y + coll.collider.attachedRigidbody.velocity.y * 2;
             rb2d.velocity = vel;
         }
     }

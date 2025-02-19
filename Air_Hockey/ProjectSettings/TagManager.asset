@@ -6,6 +6,8 @@ TagManager:
   tags:
   - ball
   - bot
+  - golBot
+  - golPlayer
   layers:
   - Default
   - TransparentFX
