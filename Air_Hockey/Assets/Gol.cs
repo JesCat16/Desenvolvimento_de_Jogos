@@ -8,8 +8,8 @@ public class Gol : MonoBehaviour
     {
         if (hitInfo.tag == "ball")
         {
-            string wallName = transform.name;
-            GameManager.Score(wallName);
+            string Golname = transform.name;
+            GameManager.Score(Golname);
             hitInfo.gameObject.SendMessage("RestartGame", null, SendMessageOptions.RequireReceiver);
         }
     }

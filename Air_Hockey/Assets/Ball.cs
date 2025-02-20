@@ -5,6 +5,7 @@ using UnityEngine;
 public class Ball : MonoBehaviour
 {
     private Rigidbody2D rb2d;               // Define o corpo rigido 2D que representa a bola
+    public AudioSource source;
 
     // inicializa a bola randomicamente para esquerda ou direita
     void GoBall()
@@ -23,6 +24,7 @@ public class Ball : MonoBehaviour
     void Start()
     {
         rb2d = GetComponent<Rigidbody2D>(); // Inicializa o objeto bola
+        source = GetComponent<AudioSource>();
         GoBall();    // Chama a função GoBall após 2 segundos
     }
 
@@ -32,16 +34,18 @@ public class Ball : MonoBehaviour
         if (coll.collider.CompareTag("Player"))
         {
             Vector2 vel;
-            vel.x = rb2d.velocity.x + coll.collider.attachedRigidbody.velocity.x * 2;
-            vel.y = rb2d.velocity.y + coll.collider.attachedRigidbody.velocity.y * 2;
+            vel.x = rb2d.velocity.x + coll.collider.attachedRigidbody.velocity.x * 2 + 5;
+            vel.y = rb2d.velocity.y + coll.collider.attachedRigidbody.velocity.y * 2 + 5;
             rb2d.velocity = vel;
+            source.Play();
         }
        else if (coll.collider.CompareTag("bot"))
         {
             Vector2 vel;
-            vel.x = rb2d.velocity.x + coll.collider.attachedRigidbody.velocity.x * 2;
-            vel.y = rb2d.velocity.y + coll.collider.attachedRigidbody.velocity.y * 2;
+            vel.x = rb2d.velocity.x + coll.collider.attachedRigidbody.velocity.x * 2 + 5;
+            vel.y = rb2d.velocity.y + coll.collider.attachedRigidbody.velocity.y * 2 + 5;
             rb2d.velocity = vel;
+            source.Play();
         }
     }
 
@@ -56,6 +60,6 @@ public class Ball : MonoBehaviour
     void RestartGame()
     {
         ResetBall();
-        Invoke("GoBall", 1);
+        GoBall();
     }
 }
