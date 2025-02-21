@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: dfd3fbadfd531c04ab350e752a085de3
+guid: 4f8d23acbbc6a1b44b4a2db98ce2fbe7
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 8244655320236923029
-    second: 31879826-hoquei-campo-icone-vetor_0
+      213: -2791081889304374837
+    second: element_purple_rectangle_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: 31879826-hoquei-campo-icone-vetor_0
+      name: element_purple_rectangle_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 334
-        height: 200
+        width: 64
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -114,8 +114,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 598914ae456ea6270800000000000000
-      internalID: 8244655320236923029
+      spriteID: bc19cf83fc51449d0800000000000000
+      internalID: -2791081889304374837
       vertices: []
       indices: 
       edges: []
@@ -130,8 +130,7 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable:
-      31879826-hoquei-campo-icone-vetor_0: 8244655320236923029
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
