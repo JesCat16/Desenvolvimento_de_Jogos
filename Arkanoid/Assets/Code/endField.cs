@@ -8,7 +8,7 @@ public class endField : MonoBehaviour
     {
         if (hitInfo.tag == "ball")
         {
-            //GameManager.Score(Golname);
+            GameManager.Life();
             hitInfo.gameObject.SendMessage("RestartGame", null, SendMessageOptions.RequireReceiver);
         }
     }

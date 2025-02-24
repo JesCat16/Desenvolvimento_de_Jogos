@@ -15,7 +15,7 @@ public class Ball : MonoBehaviour
     void Start()
     {
         rb2d = GetComponent<Rigidbody2D>(); // Inicializa o objeto bola
-        Invoke("GoBall", 2);    // Chama a função GoBall após 2 segundos
+        GoBall();    // Chama a função GoBall após 2 segundos
     }
 
     // Determina o comportamento da bola nas colisões com os Players (raquetes)
@@ -34,13 +34,13 @@ public class Ball : MonoBehaviour
     void ResetBall()
     {
         rb2d.velocity = Vector2.zero;
-        transform.position = Vector2.zero;
+        transform.position = (new Vector2(-0.02f, -5.72f));
     }
 
     // Reinicializa o jogo
     void RestartGame()
     {
         ResetBall();
-        Invoke("GoBall", 1);
+        GoBall();
     }
 }

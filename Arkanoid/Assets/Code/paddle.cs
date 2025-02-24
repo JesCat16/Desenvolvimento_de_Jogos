@@ -8,7 +8,7 @@ public class paddle : MonoBehaviour
     public KeyCode moveRight = KeyCode.D;    // Move a raquete para baixo
     public float speed = 10.0f;             // Define a velocidade da bola
     public float boundX = 4.25f;            // Define os limites em X
-    private Rigidbody2D rb2d;               // Define o corpo rigido 2D que representa a raquete
+    public Rigidbody2D rb2d;               // Define o corpo rigido 2D que representa a raquete
 
     // Start is called before the first frame update
     void Start()
@@ -44,5 +44,14 @@ public class paddle : MonoBehaviour
             pos.x = -boundX;                    
         }
         transform.position = pos;               // Atualiza a posição da raquete
+    }
+    public void ResetPaddle()
+    {
+        rb2d.velocity = Vector2.zero;
+        transform.position = (new Vector2(0.02f, -6.227898f));
+    }
+    public void RestartPaddle()
+    {
+        ResetPaddle();
     }
 }
