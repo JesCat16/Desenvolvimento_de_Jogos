@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class Ball : MonoBehaviour
 {
-    private Rigidbody2D rb2d;               // Define o corpo rigido 2D que representa a bola
+    private Rigidbody2D rb2d;
+    GameObject Paddle;// Define o corpo rigido 2D que representa a bola
 
     // inicializa a bola randomicamente para esquerda ou direita
     void GoBall()
@@ -14,6 +15,7 @@ public class Ball : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        Paddle = GameObject.FindGameObjectWithTag("Player");
         rb2d = GetComponent<Rigidbody2D>(); // Inicializa o objeto bola
         GoBall();    // Chama a função GoBall após 2 segundos
     }
@@ -28,13 +30,18 @@ public class Ball : MonoBehaviour
             vel.y = (rb2d.velocity.y / 2) + (coll.collider.attachedRigidbody.velocity.y / 3);
             rb2d.velocity = vel;
         }
+        if(coll.gameObject.tag == "redBlock")
+        {
+            Destroy(coll.gameObject);
+        }
+
     }
 
     // Reinicializa a posição e velocidade da bola
     void ResetBall()
     {
         rb2d.velocity = Vector2.zero;
-        transform.position = (new Vector2(-0.02f, -5.72f));
+        transform.position = (new Vector2(Paddle.transform.position.x, Paddle.transform.position.y));
     }
 
     // Reinicializa o jogo
