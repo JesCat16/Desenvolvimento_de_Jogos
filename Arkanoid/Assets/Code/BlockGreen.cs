@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BlockRed : MonoBehaviour
+public class BlockGreen : MonoBehaviour
 {
     private int count = 0;
 
@@ -10,7 +10,7 @@ public class BlockRed : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("ball"))
         {
-            if (count == 3)
+            if (count == 1)
             {
 
                 Destroy(gameObject);
