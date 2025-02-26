@@ -350,7 +350,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: "Em uma galaxia cheia de bloquinhos, e cabe a voc\xEA nobre jogador destruir
-    todos eles com sua nave. \nBoa Sorte! \nAperte space para come\xE7ar"
+    todos eles com sua nave, mas cuidado voc\xEA tem apenas 3 vidas.\nBoa Sorte!
+    \nAperte space para come\xE7ar"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 798abf62b4066ec46acf6be3e3664dac, type: 2}
   m_sharedMaterial: {fileID: -8594798227498211293, guid: 798abf62b4066ec46acf6be3e3664dac, type: 2}
