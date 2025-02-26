@@ -8,6 +8,7 @@ TagManager:
   - wall
   - endField
   - redBlock
+  - Brick
   layers:
   - Default
   - TransparentFX

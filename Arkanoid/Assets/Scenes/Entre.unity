@@ -198,6 +198,7 @@ GameObject:
   - component: {fileID: 519420032}
   - component: {fileID: 519420031}
   - component: {fileID: 519420029}
+  - component: {fileID: 519420033}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -279,6 +280,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &519420033
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 519420028}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 210d021eacda43e4a9afd26e828845e8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1154527617
 GameObject:
   m_ObjectHideFlags: 0
@@ -337,7 +350,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: "Em uma galaxia cheia de bloquinhos, e cabe a voc\xEA nobre jogador destruir
-    todos eles com sua nave. \nBoa Sorte!"
+    todos eles com sua nave. \nBoa Sorte! \nAperte space para come\xE7ar"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 798abf62b4066ec46acf6be3e3664dac, type: 2}
   m_sharedMaterial: {fileID: -8594798227498211293, guid: 798abf62b4066ec46acf6be3e3664dac, type: 2}

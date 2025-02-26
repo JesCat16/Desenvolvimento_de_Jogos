@@ -10,7 +10,6 @@ public class GameManager : MonoBehaviour
     public GUISkin layout;              // Fonte do placar
     GameObject theBall;                 // Referência ao objeto bola
 
-    Scene scene = SceneManager.GetActiveScene();
 
     // Start is called before the first frame update
     void Start()
@@ -26,11 +25,7 @@ public class GameManager : MonoBehaviour
     void OnGUI()
     {
         GUI.skin = layout;
-        GUI.Label(new Rect(Screen.width / 2 - 150 - 12, 20, 100, 100), "" + Lifes);
+        GUI.Label(new Rect(Screen.width / 2 - 150, 20, 100, 100), "" + Lifes);
 
-        if(Lifes == 0)
-        {
-            SceneManager.LoadScene("Lose");
-        }
     }
 }
