@@ -8,13 +8,13 @@ public class GameManager : MonoBehaviour
     public static int Lifes = 3;
 
     public GUISkin layout;              // Fonte do placar
-    GameObject theBall;                 // Referência ao objeto bola
+    GameObject theBall;                 // Referï¿½ncia ao objeto bola
 
 
     // Start is called before the first frame update
     void Start()
     {
-        theBall = GameObject.FindGameObjectWithTag("ball"); // Busca a referência da bola
+        theBall = GameObject.FindGameObjectWithTag("ball"); // Busca a referï¿½ncia da bola
     }
     
     public static void Life()
@@ -26,6 +26,5 @@ public class GameManager : MonoBehaviour
     {
         GUI.skin = layout;
         GUI.Label(new Rect(Screen.width / 2 - 150, 20, 100, 100), "" + Lifes);
-
     }
 }
