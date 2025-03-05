@@ -14,7 +14,6 @@ public class Invaders : MonoBehaviour
     void Start()
     {
         rb2d = GetComponent<Rigidbody2D>();  
-
         var vel = rb2d.velocity;
         vel.x = speed;
         rb2d.velocity = vel;
@@ -24,13 +23,15 @@ public class Invaders : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        var vel = rb2d.velocity;
         timer += Time.deltaTime;
         if (timer >= waitTime){
             ChangeState();
             counter += 1;
             timer = 0.0f;
-            if(counter > 4)
+            if(counter > 5)
             {
+                vel.x *= 2;
                 ChangeStateDown();
                 counter = 0;
             }
@@ -50,11 +51,11 @@ public class Invaders : MonoBehaviour
         position.y -= 1.0f;
         transform.position = position;
     }
-
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.gameObject.CompareTag("missel"))
+        if (collision.gameObject.CompareTag("missel"))
         {
+            speed += 1;
             gameObject.SetActive(false);
         }
     }
