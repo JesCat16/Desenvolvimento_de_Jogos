@@ -37,8 +37,7 @@ public class Invaders : MonoBehaviour
                 vel.x *= 2;
                 ChangeStateDown();
                 counter = 0;
-            }
-            
+            }   
         }
     }
 

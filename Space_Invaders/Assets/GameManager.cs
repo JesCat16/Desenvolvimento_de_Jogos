@@ -18,10 +18,16 @@ public class GameManager : MonoBehaviour
         Lives = Lives - 1;
     }
 
+    private void bigpoint()
+    {
+        points = points + 500;
+    }
+
     private void Start()
     {
         Invaders.killed += pointsome;
         player.hit += livesub;
+        MotherShip.MotherKill += bigpoint;
     }
 
     private void Update()
