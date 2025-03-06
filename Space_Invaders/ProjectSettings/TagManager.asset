@@ -6,6 +6,8 @@ TagManager:
   tags:
   - invader
   - MotherShip
+  - missel
+  - lazer
   layers:
   - Default
   - TransparentFX

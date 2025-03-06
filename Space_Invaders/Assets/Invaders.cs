@@ -9,6 +9,8 @@ public class Invaders : MonoBehaviour
     private float waitTime = 1.0f;
     private float speed = 2.0f;
     private int counter = 0;
+    private float AttackRate = 1.0f;
+    public Lazer_Missel lazer;
 
     // Start is called before the first frame update
     void Start()
@@ -17,7 +19,7 @@ public class Invaders : MonoBehaviour
         var vel = rb2d.velocity;
         vel.x = speed;
         rb2d.velocity = vel;
-
+        InvokeRepeating(nameof(lazerAttack), AttackRate, AttackRate);
     }
 
     // Update is called once per frame
@@ -50,6 +52,17 @@ public class Invaders : MonoBehaviour
         Vector3 position = transform.position;
         position.y -= 1.0f;
         transform.position = position;
+    }
+
+    private void lazerAttack()
+    {
+        if((Random.value < GameObject.FindGameObjectsWithTag("invader").Length) && GameObject.FindGameObjectsWithTag("lazer").Length < 5)
+        {
+            if(gameObject.activeSelf == true)
+            {
+                Instantiate(lazer, transform.position, Quaternion.identity);
+            }
+        }
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {

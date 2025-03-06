@@ -11,7 +11,7 @@ public class player : MonoBehaviour
     public float speed = 10.0f;             // Define a velocidade da bola
     public float boundX;            // Define os limites em X
     public Rigidbody2D rb2d;               // Define o corpo rigido 2D que representa a raquete
-    public Laze_Missel missel;
+    public Lazer_Missel missel;
 
     // Start is called before the first frame update
     void Start()

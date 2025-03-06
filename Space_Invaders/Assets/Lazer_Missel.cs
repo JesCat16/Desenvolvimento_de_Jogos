@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Laze_Missel : MonoBehaviour
+public class Lazer_Missel : MonoBehaviour
 {
     public Vector3 direc;
 
