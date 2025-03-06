@@ -11,6 +11,7 @@ public class Invaders : MonoBehaviour
     private int counter = 0;
     private float AttackRate = 1.0f;
     public Lazer_Missel lazer;
+    public static System.Action killed;
 
     // Start is called before the first frame update
     void Start()
@@ -69,6 +70,7 @@ public class Invaders : MonoBehaviour
         if (collision.gameObject.CompareTag("missel"))
         {
             speed += 1;
+            killed.Invoke();
             gameObject.SetActive(false);
         }
     }

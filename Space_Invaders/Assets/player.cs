@@ -12,6 +12,8 @@ public class player : MonoBehaviour
     public float boundX;            // Define os limites em X
     public Rigidbody2D rb2d;               // Define o corpo rigido 2D que representa a raquete
     public Lazer_Missel missel;
+    public static System.Action hit;
+    public static System.Action gameOver;
 
     // Start is called before the first frame update
     void Start()
@@ -57,5 +59,18 @@ public class player : MonoBehaviour
     private void ShootLazer()
     {
         Instantiate(missel, transform.position, Quaternion.identity);
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.CompareTag("lazer"))
+        {
+            hit.Invoke();
+        }
+
+        if(collision.gameObject.CompareTag("invader"))
+        {
+            gameOver.Invoke();
+        }
     }
 }
