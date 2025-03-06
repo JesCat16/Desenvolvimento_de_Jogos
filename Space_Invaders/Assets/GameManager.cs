@@ -7,6 +7,7 @@ public class GameManager : MonoBehaviour
     public GUISkin layout;
     private int Lives = 3;
     private int points = 0;
+    public static System.Action death;
     // Start is called before the first frame update
     private void pointsome()
     {
@@ -17,11 +18,20 @@ public class GameManager : MonoBehaviour
         Lives = Lives - 1;
     }
 
-    private void Update()
+    private void Start()
     {
         Invaders.killed += pointsome;
         player.hit += livesub;
     }
+
+    private void Update()
+    {
+        if(Lives == 0)
+        {
+            death.Invoke();
+        }
+    }
+
     void OnGUI()
     {
         GUI.skin = layout;
