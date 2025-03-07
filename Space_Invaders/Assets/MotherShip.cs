@@ -12,11 +12,14 @@ public class MotherShip : MonoBehaviour
     private float timer = 0.0f;
     private float waitTime = 1.0f;
     private float speed = 5.0f;
+    private float boundX = 7.25f;
+    private Transform locateWall;
     public static System.Action MotherKill;
 
     // Start is called before the first frame update
     void Start()
     {
+        locateWall = GameObject.FindGameObjectWithTag("wall2").transform;
         spawnTime = Random.Range(1,10);
         rb2d = GetComponent<Rigidbody2D>();
         var vel = rb2d.velocity;
@@ -28,18 +31,7 @@ public class MotherShip : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-       //var vel = rb2d.velocity;
-       //timer += Time.deltaTime;
-       //if (timer >= waitTime)
-       //{
-       //   ChangeState();
-       //   cycle -= 1;
-       //   timer = 0.0f;
-       //}
-       //if (cycle == 0)
-       //{
-       //   Despawn();
-       //}
+       
     }
     private void Despawn()
     {
@@ -52,6 +44,14 @@ public class MotherShip : MonoBehaviour
     {
         spawned = true;
         gameObject.SetActive(true);
+        transform.position = Vector2.MoveTowards(transform.position, locateWall.position, speed * Time.deltaTime);
+        var pos = transform.position;
+
+        if (pos > boundX)
+        {
+            Despawn();
+        }
+        transform.position = pos;
     }
 
     void ChangeState()
