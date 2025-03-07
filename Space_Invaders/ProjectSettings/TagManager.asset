@@ -8,6 +8,7 @@ TagManager:
   - MotherShip
   - missel
   - lazer
+  - wall2
   layers:
   - Default
   - TransparentFX
