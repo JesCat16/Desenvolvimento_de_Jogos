@@ -10,22 +10,13 @@ public class MotherShip : MonoBehaviour
     private float spawnTime;
     private int rand;
     private float speed = 5.0f;
-<<<<<<< Updated upstream
-    private float boundX = 7.25f;
-    private Transform locateWall;
-=======
     private float Bound = 7.0f;
->>>>>>> Stashed changes
     public static System.Action MotherKill;
 
     // Start is called before the first frame update
     void Start()
     {
-<<<<<<< Updated upstream
-        locateWall = GameObject.FindGameObjectWithTag("wall2").transform;
-=======
         rand = Random.Range(0, 1);
->>>>>>> Stashed changes
         spawnTime = Random.Range(1,10);
         rb2d = GetComponent<Rigidbody2D>();
         var vel = rb2d.velocity;
@@ -37,9 +28,6 @@ public class MotherShip : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-<<<<<<< Updated upstream
-       
-=======
         if (!spawned) return;
         if(rand == 0)
         {
@@ -58,7 +46,6 @@ public class MotherShip : MonoBehaviour
             }
         }
         
->>>>>>> Stashed changes
     }
     private void Despawn()
     {
@@ -79,22 +66,8 @@ public class MotherShip : MonoBehaviour
             transform.position = new Vector2(Bound, transform.position.y);
         }
         gameObject.SetActive(true);
-        transform.position = Vector2.MoveTowards(transform.position, locateWall.position, speed * Time.deltaTime);
-        var pos = transform.position;
-
-        if (pos > boundX)
-        {
-            Despawn();
         }
-        transform.position = pos;
-    }
 
-    void ChangeState()
-    {
-        var vel = rb2d.velocity;
-        vel.x *= -1;
-        rb2d.velocity = vel;
-    }
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.CompareTag("missel"))
