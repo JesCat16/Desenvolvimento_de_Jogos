@@ -50,7 +50,7 @@ public class Invaders : MonoBehaviour
     void ChangeStateDown()
     {
         Vector3 position = transform.position;
-        position.y -= 1.0f;
+        position.y -= 2.0f;
         transform.position = position;
     }
 
