@@ -11538,7 +11538,6 @@ GameObject:
   - component: {fileID: 2121012928}
   - component: {fileID: 2121012927}
   - component: {fileID: 2121012926}
-  m_Layer: 9
   m_Name: SpaceInvaders_21
   m_TagString: MotherShip
   m_Icon: {fileID: 0}
