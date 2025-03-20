@@ -18,28 +18,28 @@ public class player : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        rb2d = GetComponent<Rigidbody2D>();
+        rb2d = GetComponent<Rigidbody2D>();     
     }
 
     // Update is called once per frame
     void Update()
     {
-        var vel = rb2d.velocity;
+        var vel = rb2d.velocity;                
         if (Input.GetKey(moveLeft))
-        {
+        {             
             vel.x = -speed;
         }
         else if (Input.GetKey(moveRight))
-        {
+        {      
             vel.x = speed;
         }
         else
         {
-            vel.x = 0;
+            vel.x = 0;                          
         }
-        rb2d.velocity = vel;
+        rb2d.velocity = vel;                    
 
-        var pos = transform.position;
+        var pos = transform.position;           
         if (pos.x > boundX)
         {
             pos.x = boundX;
@@ -68,7 +68,7 @@ public class player : MonoBehaviour
             hit.Invoke();
         }
 
-        if (collision.gameObject.CompareTag("invader"))
+        if(collision.gameObject.CompareTag("invader"))
         {
             gameOver.Invoke();
         }

@@ -6,8 +6,9 @@ TagManager:
   tags:
   - invader
   - MotherShip
-  - lazer
   - missel
+  - lazer
+  - wall2
   layers:
   - Default
   - TransparentFX
@@ -15,10 +16,10 @@ TagManager:
   - 
   - Water
   - UI
+  - Player
+  - laser
   - missil
-  - lazer
-  - invaders
-  - player
+  - Invader
   - 
   - 
   - 
