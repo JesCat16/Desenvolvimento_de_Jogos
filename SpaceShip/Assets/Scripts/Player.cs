@@ -7,10 +7,11 @@ public class Player : MonoBehaviour
 {
     public KeyCode moveUp = KeyCode.W;      // Move a raquete para cima
     public KeyCode moveDown = KeyCode.S;    // Move a raquete para baixo
-    //public KeyCode Shoot = KeyCode.Space;
+    public KeyCode Shoot = KeyCode.Space;
     public float speed = 10.0f;             // Define a velocidade da bola
     public float boundY;            // Define os limites em X
     public Rigidbody2D rb2d;
+    public Lazer_Missel missel;
     public static System.Action hit;// Define o corpo rigido 2D que representa a raquete
     // Start is called before the first frame update
     void Start()
@@ -45,7 +46,27 @@ public class Player : MonoBehaviour
         {
             pos.y = -boundY;                    // Corrige a posicao da raquete caso ele ultrapasse o limite superior
         }
-        transform.position = pos;               // Atualiza a posição da raquete
+        transform.position = pos;   // Atualiza a posição da raquete
+
+        if (Input.GetKeyDown(Shoot))
+        {
+            ShootLazer();
+        }
+    }
+
+    private void ShootLazer()
+    {
+        Instantiate(missel, transform.position, Quaternion.identity);
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.CompareTag("lazer") 
+            || collision.gameObject.CompareTag("nave") 
+            || collision.gameObject.CompareTag("cometa"))
+        {
+            hit.Invoke();
+        }
     }
 }
 

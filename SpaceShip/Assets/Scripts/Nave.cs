@@ -9,12 +9,16 @@ public class Nave : MonoBehaviour
     private Vector2 movement;
     public Vector2 direction = new Vector2(-1,0);
     private Transform wallLocation;
-    //private float AttackRate = 1.0f;
+    private float AttackRate = 1.5f;
+    public Lazer_Missel lazer;
+    public static System.Action killed;
+
     // Start is called before the first frame update
     void Start()
     {
         wallLocation = GameObject.FindGameObjectWithTag("wall").transform;
         rb2d = GetComponent<Rigidbody2D>();
+        InvokeRepeating(nameof(lazerAttack), AttackRate, AttackRate);
     }
 
     // Update is called once per frame
@@ -26,10 +30,22 @@ public class Nave : MonoBehaviour
     {
         rb2d.velocity = movement;
     }
+    private void lazerAttack()
+    {
+        if (gameObject.activeSelf == true)
+        {
+           Instantiate(lazer, transform.position, Quaternion.identity);
+        }
+    }
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.CompareTag("wall"))
         {
+            Destroy(gameObject);
+        }
+        else if(collision.gameObject.CompareTag("missel"))
+        {
+            killed.Invoke();
             Destroy(gameObject);
         }
 

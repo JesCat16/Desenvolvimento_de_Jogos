@@ -157,6 +157,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   direction: {x: -1, y: 0}
+  lazer: {fileID: 9027332383944952849, guid: 252837f118cb1f7498f8e11b2a0161af, type: 3}
 --- !u!50 &988054030850516003
 Rigidbody2D:
   serializedVersion: 4

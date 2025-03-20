@@ -9,7 +9,7 @@ public class Cometa : MonoBehaviour
     private Vector2 movement;
     public Vector2 direction = new Vector2(-1, 0);
     private Transform wallLocation;
-    //private float AttackRate = 1.0f;
+    public static System.Action destroyed;
     // Start is called before the first frame update
     void Start()
     {
@@ -30,6 +30,11 @@ public class Cometa : MonoBehaviour
         {
             Destroy(gameObject);
         }
-        
+        else if (collision.gameObject.CompareTag("missel"))
+        {
+            destroyed.Invoke();
+            Destroy(gameObject);
+        }
+
     }
 }

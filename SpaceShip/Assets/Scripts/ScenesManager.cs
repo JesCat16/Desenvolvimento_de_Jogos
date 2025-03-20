@@ -6,19 +6,20 @@ using UnityEngine.SceneManagement;
 public class ScenesManager : MonoBehaviour
 {
     private bool Lose = false;
+    private bool Win = false;
     private void Start()
     {
         GameManager.death += GameOver;
+        GameManager.win += Victory;
     }
 
     void Update()
     {
         Scene scene = SceneManager.GetActiveScene();
-        GameObject[] gos = GameObject.FindGameObjectsWithTag("invader");
-        print(gos.Length);
-        if (gos.Length == 0)
+        
+        if (Win == true)
         {
-            if (scene.name == "Game")
+            if (scene.name == "SampleScene")
             {
                 SceneManager.LoadScene("Win");
             }
@@ -29,11 +30,15 @@ public class ScenesManager : MonoBehaviour
         }
         if (Input.GetKeyDown(KeyCode.Space) && (scene.name == "Win" || scene.name == "Lose"))
         {
-            SceneManager.LoadScene("Game");
+            SceneManager.LoadScene("SampleScene");
         }
     }
     private void GameOver()
     {
         Lose = true;
+    }
+    private void Victory()
+    {
+        Win = true;
     }
 }

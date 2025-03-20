@@ -8,10 +8,15 @@ public class GameManager : MonoBehaviour
     private int Lives = 3;
     private int points = 0;
     public static System.Action death;
+    public static System.Action win;
     // Start is called before the first frame update
-    private void pointsome()
+    private void pointsomeNave()
     {
         points = points + 100;
+    }
+    private void pointsomeCometa()
+    {
+        points = points + 50;
     }
     private void livesub()
     {
@@ -20,8 +25,9 @@ public class GameManager : MonoBehaviour
 
     private void Start()
     {
-        //Invaders.killed += pointsome;
-        //player.hit += livesub;
+        Nave.killed += pointsomeNave;
+        Cometa.destroyed += pointsomeCometa;
+        Player.hit += livesub;
     }
 
     private void Update()
@@ -29,6 +35,10 @@ public class GameManager : MonoBehaviour
         if (Lives == 0)
         {
             death.Invoke();
+        }
+        if(points == 10000)
+        {
+            win.Invoke();
         }
     }
 
