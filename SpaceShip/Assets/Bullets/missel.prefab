@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 1503987916144938776}
   - component: {fileID: -5221466565055789687}
   - component: {fileID: 870743612865313220}
-  m_Layer: 8
+  m_Layer: 7
   m_Name: missel
   m_TagString: missel
   m_Icon: {fileID: 0}
