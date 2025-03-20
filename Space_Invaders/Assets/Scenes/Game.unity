@@ -211,7 +211,7 @@ GameObject:
   - component: {fileID: 133341526}
   - component: {fileID: 133341525}
   - component: {fileID: 133341524}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: SpaceInvaders_9 (8)
   m_TagString: invader
   m_Icon: {fileID: 0}
@@ -409,7 +409,7 @@ GameObject:
   - component: {fileID: 178391793}
   - component: {fileID: 178391792}
   - component: {fileID: 178391791}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: SpaceInvaders_9 (3)
   m_TagString: invader
   m_Icon: {fileID: 0}
@@ -607,7 +607,7 @@ GameObject:
   - component: {fileID: 221431026}
   - component: {fileID: 221431025}
   - component: {fileID: 221431024}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: SpaceInvaders_5 (7)
   m_TagString: invader
   m_Icon: {fileID: 0}
@@ -805,7 +805,7 @@ GameObject:
   - component: {fileID: 264896280}
   - component: {fileID: 264896279}
   - component: {fileID: 264896278}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: SpaceInvaders_7 (10)
   m_TagString: invader
   m_Icon: {fileID: 0}
@@ -1003,7 +1003,7 @@ GameObject:
   - component: {fileID: 297880570}
   - component: {fileID: 297880569}
   - component: {fileID: 297880568}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: SpaceInvaders_7 (3)
   m_TagString: invader
   m_Icon: {fileID: 0}
@@ -1201,7 +1201,7 @@ GameObject:
   - component: {fileID: 364351121}
   - component: {fileID: 364351120}
   - component: {fileID: 364351119}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: SpaceInvaders_5 (1)
   m_TagString: invader
   m_Icon: {fileID: 0}
@@ -1399,7 +1399,7 @@ GameObject:
   - component: {fileID: 384133212}
   - component: {fileID: 384133211}
   - component: {fileID: 384133210}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: SpaceInvaders_5 (8)
   m_TagString: invader
   m_Icon: {fileID: 0}
@@ -1597,7 +1597,7 @@ GameObject:
   - component: {fileID: 421253654}
   - component: {fileID: 421253653}
   - component: {fileID: 421253652}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: SpaceInvaders_9 (4)
   m_TagString: invader
   m_Icon: {fileID: 0}
@@ -1795,7 +1795,7 @@ GameObject:
   - component: {fileID: 455461121}
   - component: {fileID: 455461120}
   - component: {fileID: 455461119}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: SpaceInvaders_3 (4)
   m_TagString: invader
   m_Icon: {fileID: 0}
@@ -1993,7 +1993,7 @@ GameObject:
   - component: {fileID: 480833981}
   - component: {fileID: 480833980}
   - component: {fileID: 480833979}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: SpaceInvaders_3 (7)
   m_TagString: invader
   m_Icon: {fileID: 0}
@@ -2191,7 +2191,7 @@ GameObject:
   - component: {fileID: 506764337}
   - component: {fileID: 506764336}
   - component: {fileID: 506764335}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: SpaceInvaders_3 (2)
   m_TagString: invader
   m_Icon: {fileID: 0}
@@ -2494,7 +2494,7 @@ GameObject:
   - component: {fileID: 643920150}
   - component: {fileID: 643920149}
   - component: {fileID: 643920148}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: SpaceInvaders_7 (5)
   m_TagString: invader
   m_Icon: {fileID: 0}
@@ -2692,7 +2692,7 @@ GameObject:
   - component: {fileID: 656697561}
   - component: {fileID: 656697560}
   - component: {fileID: 656697559}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: SpaceInvaders_3
   m_TagString: invader
   m_Icon: {fileID: 0}
@@ -2890,7 +2890,7 @@ GameObject:
   - component: {fileID: 673267344}
   - component: {fileID: 673267343}
   - component: {fileID: 673267342}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: SpaceInvaders_3 (5)
   m_TagString: invader
   m_Icon: {fileID: 0}
@@ -3088,7 +3088,7 @@ GameObject:
   - component: {fileID: 745162742}
   - component: {fileID: 745162741}
   - component: {fileID: 745162740}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: SpaceInvaders_1 (8)
   m_TagString: invader
   m_Icon: {fileID: 0}
@@ -3286,7 +3286,7 @@ GameObject:
   - component: {fileID: 751191701}
   - component: {fileID: 751191700}
   - component: {fileID: 751191699}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: SpaceInvaders_7 (7)
   m_TagString: invader
   m_Icon: {fileID: 0}
@@ -3484,7 +3484,7 @@ GameObject:
   - component: {fileID: 754778787}
   - component: {fileID: 754778786}
   - component: {fileID: 754778785}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: SpaceInvaders_9 (7)
   m_TagString: invader
   m_Icon: {fileID: 0}
@@ -3682,7 +3682,7 @@ GameObject:
   - component: {fileID: 810298469}
   - component: {fileID: 810298468}
   - component: {fileID: 810298467}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: SpaceInvaders_9 (9)
   m_TagString: invader
   m_Icon: {fileID: 0}
@@ -3880,7 +3880,7 @@ GameObject:
   - component: {fileID: 813465825}
   - component: {fileID: 813465824}
   - component: {fileID: 813465823}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: SpaceInvaders_1 (2)
   m_TagString: invader
   m_Icon: {fileID: 0}
@@ -4122,7 +4122,7 @@ GameObject:
   - component: {fileID: 852803669}
   - component: {fileID: 852803668}
   - component: {fileID: 852803667}
-  m_Layer: 6
+  m_Layer: 9
   m_Name: SpaceInvaders_22
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4304,7 +4304,7 @@ GameObject:
   - component: {fileID: 858015216}
   - component: {fileID: 858015215}
   - component: {fileID: 858015214}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: SpaceInvaders_1 (5)
   m_TagString: invader
   m_Icon: {fileID: 0}
@@ -4502,7 +4502,7 @@ GameObject:
   - component: {fileID: 862059624}
   - component: {fileID: 862059623}
   - component: {fileID: 862059622}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: SpaceInvaders_7 (9)
   m_TagString: invader
   m_Icon: {fileID: 0}
@@ -4700,7 +4700,7 @@ GameObject:
   - component: {fileID: 905801754}
   - component: {fileID: 905801753}
   - component: {fileID: 905801752}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: SpaceInvaders_9 (10)
   m_TagString: invader
   m_Icon: {fileID: 0}
@@ -4898,7 +4898,7 @@ GameObject:
   - component: {fileID: 911046959}
   - component: {fileID: 911046958}
   - component: {fileID: 911046957}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: SpaceInvaders_3 (6)
   m_TagString: invader
   m_Icon: {fileID: 0}
@@ -5096,7 +5096,7 @@ GameObject:
   - component: {fileID: 920771427}
   - component: {fileID: 920771426}
   - component: {fileID: 920771425}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: SpaceInvaders_1 (4)
   m_TagString: invader
   m_Icon: {fileID: 0}
@@ -5294,7 +5294,7 @@ GameObject:
   - component: {fileID: 935110407}
   - component: {fileID: 935110406}
   - component: {fileID: 935110405}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: SpaceInvaders_1 (1)
   m_TagString: invader
   m_Icon: {fileID: 0}
@@ -5492,7 +5492,7 @@ GameObject:
   - component: {fileID: 935379196}
   - component: {fileID: 935379195}
   - component: {fileID: 935379194}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: SpaceInvaders_1 (10)
   m_TagString: invader
   m_Icon: {fileID: 0}
@@ -5690,7 +5690,7 @@ GameObject:
   - component: {fileID: 1049419756}
   - component: {fileID: 1049419755}
   - component: {fileID: 1049419754}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: SpaceInvaders_7
   m_TagString: invader
   m_Icon: {fileID: 0}
@@ -5888,7 +5888,7 @@ GameObject:
   - component: {fileID: 1085053616}
   - component: {fileID: 1085053615}
   - component: {fileID: 1085053614}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: SpaceInvaders_5 (4)
   m_TagString: invader
   m_Icon: {fileID: 0}
@@ -6086,7 +6086,7 @@ GameObject:
   - component: {fileID: 1101661582}
   - component: {fileID: 1101661581}
   - component: {fileID: 1101661580}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: SpaceInvaders_3 (8)
   m_TagString: invader
   m_Icon: {fileID: 0}
@@ -6284,7 +6284,7 @@ GameObject:
   - component: {fileID: 1212400898}
   - component: {fileID: 1212400897}
   - component: {fileID: 1212400896}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: SpaceInvaders_5 (10)
   m_TagString: invader
   m_Icon: {fileID: 0}
@@ -6482,7 +6482,7 @@ GameObject:
   - component: {fileID: 1257017698}
   - component: {fileID: 1257017697}
   - component: {fileID: 1257017696}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: SpaceInvaders_9 (2)
   m_TagString: invader
   m_Icon: {fileID: 0}
@@ -6680,7 +6680,7 @@ GameObject:
   - component: {fileID: 1281529380}
   - component: {fileID: 1281529379}
   - component: {fileID: 1281529378}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: SpaceInvaders_5 (2)
   m_TagString: invader
   m_Icon: {fileID: 0}
@@ -6878,7 +6878,7 @@ GameObject:
   - component: {fileID: 1341622314}
   - component: {fileID: 1341622313}
   - component: {fileID: 1341622312}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: SpaceInvaders_7 (4)
   m_TagString: invader
   m_Icon: {fileID: 0}
@@ -7107,7 +7107,7 @@ GameObject:
   - component: {fileID: 1365924662}
   - component: {fileID: 1365924661}
   - component: {fileID: 1365924660}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: SpaceInvaders_3 (10)
   m_TagString: invader
   m_Icon: {fileID: 0}
@@ -7305,7 +7305,7 @@ GameObject:
   - component: {fileID: 1485862993}
   - component: {fileID: 1485862992}
   - component: {fileID: 1485862991}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: SpaceInvaders_5 (5)
   m_TagString: invader
   m_Icon: {fileID: 0}
@@ -7503,7 +7503,7 @@ GameObject:
   - component: {fileID: 1505514085}
   - component: {fileID: 1505514084}
   - component: {fileID: 1505514083}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: SpaceInvaders_1 (6)
   m_TagString: invader
   m_Icon: {fileID: 0}
@@ -7701,7 +7701,7 @@ GameObject:
   - component: {fileID: 1514213577}
   - component: {fileID: 1514213576}
   - component: {fileID: 1514213575}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: SpaceInvaders_9 (1)
   m_TagString: invader
   m_Icon: {fileID: 0}
@@ -7899,7 +7899,7 @@ GameObject:
   - component: {fileID: 1554076519}
   - component: {fileID: 1554076518}
   - component: {fileID: 1554076517}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: SpaceInvaders_3 (3)
   m_TagString: invader
   m_Icon: {fileID: 0}
@@ -8097,7 +8097,7 @@ GameObject:
   - component: {fileID: 1562418282}
   - component: {fileID: 1562418281}
   - component: {fileID: 1562418280}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: SpaceInvaders_1
   m_TagString: invader
   m_Icon: {fileID: 0}
@@ -8295,7 +8295,7 @@ GameObject:
   - component: {fileID: 1634213211}
   - component: {fileID: 1634213210}
   - component: {fileID: 1634213209}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: SpaceInvaders_5
   m_TagString: invader
   m_Icon: {fileID: 0}
@@ -8493,7 +8493,7 @@ GameObject:
   - component: {fileID: 1661379957}
   - component: {fileID: 1661379956}
   - component: {fileID: 1661379955}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: SpaceInvaders_7 (2)
   m_TagString: invader
   m_Icon: {fileID: 0}
@@ -8691,7 +8691,7 @@ GameObject:
   - component: {fileID: 1697205322}
   - component: {fileID: 1697205321}
   - component: {fileID: 1697205320}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: SpaceInvaders_3 (1)
   m_TagString: invader
   m_Icon: {fileID: 0}
@@ -8889,7 +8889,7 @@ GameObject:
   - component: {fileID: 1711771289}
   - component: {fileID: 1711771288}
   - component: {fileID: 1711771287}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: SpaceInvaders_9
   m_TagString: invader
   m_Icon: {fileID: 0}
@@ -9165,7 +9165,7 @@ GameObject:
   - component: {fileID: 1821226010}
   - component: {fileID: 1821226009}
   - component: {fileID: 1821226008}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: SpaceInvaders_7 (6)
   m_TagString: invader
   m_Icon: {fileID: 0}
@@ -9363,7 +9363,7 @@ GameObject:
   - component: {fileID: 1829378723}
   - component: {fileID: 1829378722}
   - component: {fileID: 1829378721}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: SpaceInvaders_3 (9)
   m_TagString: invader
   m_Icon: {fileID: 0}
@@ -9561,7 +9561,7 @@ GameObject:
   - component: {fileID: 1877867219}
   - component: {fileID: 1877867218}
   - component: {fileID: 1877867217}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: SpaceInvaders_1 (7)
   m_TagString: invader
   m_Icon: {fileID: 0}
@@ -9759,7 +9759,7 @@ GameObject:
   - component: {fileID: 1919000005}
   - component: {fileID: 1919000004}
   - component: {fileID: 1919000003}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: SpaceInvaders_5 (6)
   m_TagString: invader
   m_Icon: {fileID: 0}
@@ -9957,7 +9957,7 @@ GameObject:
   - component: {fileID: 1957762018}
   - component: {fileID: 1957762017}
   - component: {fileID: 1957762016}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: SpaceInvaders_5 (3)
   m_TagString: invader
   m_Icon: {fileID: 0}
@@ -10155,7 +10155,7 @@ GameObject:
   - component: {fileID: 1982291441}
   - component: {fileID: 1982291440}
   - component: {fileID: 1982291439}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: SpaceInvaders_5 (9)
   m_TagString: invader
   m_Icon: {fileID: 0}
@@ -10353,7 +10353,7 @@ GameObject:
   - component: {fileID: 1996686247}
   - component: {fileID: 1996686246}
   - component: {fileID: 1996686245}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: SpaceInvaders_9 (6)
   m_TagString: invader
   m_Icon: {fileID: 0}
@@ -10551,7 +10551,7 @@ GameObject:
   - component: {fileID: 2038470068}
   - component: {fileID: 2038470067}
   - component: {fileID: 2038470066}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: SpaceInvaders_7 (1)
   m_TagString: invader
   m_Icon: {fileID: 0}
@@ -10749,7 +10749,7 @@ GameObject:
   - component: {fileID: 2067327213}
   - component: {fileID: 2067327212}
   - component: {fileID: 2067327211}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: SpaceInvaders_9 (5)
   m_TagString: invader
   m_Icon: {fileID: 0}
@@ -10947,7 +10947,7 @@ GameObject:
   - component: {fileID: 2069787016}
   - component: {fileID: 2069787015}
   - component: {fileID: 2069787014}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: SpaceInvaders_1 (3)
   m_TagString: invader
   m_Icon: {fileID: 0}
@@ -11145,7 +11145,7 @@ GameObject:
   - component: {fileID: 2093535147}
   - component: {fileID: 2093535146}
   - component: {fileID: 2093535145}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: SpaceInvaders_1 (9)
   m_TagString: invader
   m_Icon: {fileID: 0}
@@ -11343,7 +11343,7 @@ GameObject:
   - component: {fileID: 2098481938}
   - component: {fileID: 2098481937}
   - component: {fileID: 2098481936}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: SpaceInvaders_7 (8)
   m_TagString: invader
   m_Icon: {fileID: 0}
