@@ -9,6 +9,9 @@ public class GameManager : MonoBehaviour
     private int points = 0;
     public static System.Action death;
     public static System.Action win;
+    private float timer = 0f;
+    private static bool slowmotionwasactive = false;
+    public static bool slowmotionactive = false;
     // Start is called before the first frame update
     private void pointsomeNave()
     {
@@ -37,7 +40,21 @@ public class GameManager : MonoBehaviour
             death.Invoke();
         }
 
-        if(points == 10000)
+        if(points > 500 && slowmotionwasactive == false)
+        {
+            if (timer > 60000)
+            {
+                slowmotionactive = true;
+                timer += Time.deltaTime;
+            }
+            else
+            {
+                slowmotionactive = false;
+                slowmotionwasactive = true;
+            }
+        }
+
+        if(points == 1000)
         {
             win.Invoke();
         }

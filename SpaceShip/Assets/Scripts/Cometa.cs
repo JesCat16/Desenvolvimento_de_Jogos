@@ -5,7 +5,7 @@ using UnityEngine;
 public class Cometa : MonoBehaviour
 {
     private Rigidbody2D rb2d;
-    private Vector2 speed = new Vector2(2, 2);
+    private float speed;
     private Vector2 movement;
     public Vector2 direction = new Vector2(-1, 0);
     private Transform wallLocation;
@@ -18,7 +18,15 @@ public class Cometa : MonoBehaviour
     }
     void Update()
     {
-        movement = new Vector2(direction.x * speed.x, direction.y * speed.y);
+        if (GameManager.slowmotionactive)
+        {
+            speed = 1.5f;
+        }
+        else
+        {
+            speed = 4.5f;
+        }
+        movement = new Vector2(direction.x * speed, direction.y * speed);
     }
     private void FixedUpdate()
     {

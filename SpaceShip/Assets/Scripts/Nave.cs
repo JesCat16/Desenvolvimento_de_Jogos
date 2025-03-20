@@ -5,11 +5,11 @@ using UnityEngine;
 public class Nave : MonoBehaviour
 {
     private Rigidbody2D rb2d;
-    private Vector2 speed = new Vector2(2,2);
     private Vector2 movement;
-    public Vector2 direction = new Vector2(-1,0);
+    private float speed;
+    public Vector2 direction = new Vector2(-1, 0);
     private Transform wallLocation;
-    private float AttackRate = 1.5f;
+    private float AttackRate = 1.0f;
     public Lazer_Missel lazer;
     public static System.Action killed;
 
@@ -24,7 +24,15 @@ public class Nave : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        movement = new Vector2(direction.x * speed.x, direction.y * speed.y);
+        if (GameManager.slowmotionactive)
+        {
+            speed = 2.5f;
+        }
+        else
+        {
+            speed = 5.0f;
+        }
+        movement = new Vector2(direction.x * speed, direction.y * speed);
     }
     private void FixedUpdate()
     {
@@ -34,7 +42,7 @@ public class Nave : MonoBehaviour
     {
         if (gameObject.activeSelf == true)
         {
-           Instantiate(lazer, transform.position, Quaternion.identity);
+            Instantiate(lazer, transform.position, Quaternion.identity);
         }
     }
     private void OnTriggerEnter2D(Collider2D collision)
@@ -43,7 +51,7 @@ public class Nave : MonoBehaviour
         {
             Destroy(gameObject);
         }
-        else if(collision.gameObject.CompareTag("missel"))
+        else if (collision.gameObject.CompareTag("missel"))
         {
             killed.Invoke();
             Destroy(gameObject);
