@@ -36,6 +36,7 @@ public class GameManager : MonoBehaviour
         {
             death.Invoke();
         }
+
         if(points == 10000)
         {
             win.Invoke();
