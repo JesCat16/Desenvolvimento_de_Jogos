@@ -54,7 +54,7 @@ public class GameManager : MonoBehaviour
             }
         }
 
-        if(points == 1000)
+        if(points > 1000)
         {
             win.Invoke();
         }
