@@ -12,10 +12,12 @@ public class playerMovement : MonoBehaviour
     public float seeGround;
     public LayerMask ground;
     private Animator animator;
+    private bool isFasingRight;
 
     // Start is called before the first frame update
     void Start()
     {
+        isFasingRight = false;
         animator = GetComponent<Animator>();
         rb = GetComponent<Rigidbody2D>();
     }
@@ -43,6 +45,23 @@ public class playerMovement : MonoBehaviour
 
         animator.SetBool("isJumping", !isInGround());
 
+        if(!isFasingRight && Move > 0)
+        {
+            Flip();
+        }
+        else if(isFasingRight && Move < 0)
+        {
+            Flip();
+        }
+
+    }
+
+    public void Flip()
+    {
+        isFasingRight = !isFasingRight;
+        Vector3 localScale = transform.localScale;
+        localScale.x *= -1f;
+        transform.localScale = localScale;
     }
 
     public bool isInGround()
