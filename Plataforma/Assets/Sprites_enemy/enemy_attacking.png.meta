@@ -1,37 +1,37 @@
 fileFormatVersion: 2
-guid: 626452834c4613a40a05f31ac0673448
+guid: b31e784c849a8914bb3a91f4a04954f5
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -2987179049035696926
-    second: walking_0
+      213: -6470486263621314636
+    second: enemy_attacking_0
   - first:
-      213: -4154626181522259262
-    second: walking_1
+      213: 584248316050078905
+    second: enemy_attacking_1
   - first:
-      213: -7423615830899905516
-    second: walking_2
+      213: -6684955122815906866
+    second: enemy_attacking_2
   - first:
-      213: 4036955197636849006
-    second: walking_3
+      213: 8491818657761931045
+    second: enemy_attacking_3
   - first:
-      213: -7918336409512017615
-    second: walking_4
+      213: -8783480553753845133
+    second: enemy_attacking_4
   - first:
-      213: 1250286383453380257
-    second: walking_5
+      213: 1176283123454796310
+    second: enemy_attacking_5
   - first:
-      213: -1129278912610544731
-    second: walking_6
+      213: 3805667875891004563
+    second: enemy_attacking_6
   - first:
-      213: -7318767380291708578
-    second: walking_7
+      213: -8936264432579058456
+    second: enemy_attacking_7
   - first:
-      213: -9034330975163978919
-    second: walking_8
+      213: 7077799590435719564
+    second: enemy_attacking_8
   - first:
-      213: -2642428139442013364
-    second: walking_9
+      213: 8192835076964018499
+    second: enemy_attacking_9
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -127,11 +127,11 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: walking_0
+      name: enemy_attacking_0
       rect:
         serializedVersion: 2
         x: 9
-        y: 8
+        y: 16
         width: 14
         height: 12
       alignment: 0
@@ -141,18 +141,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 2e4fcbd4b786b86d0800000000000000
-      internalID: -2987179049035696926
+      spriteID: 4b79ecc76073436a0800000000000000
+      internalID: -6470486263621314636
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: walking_1
+      name: enemy_attacking_1
       rect:
         serializedVersion: 2
         x: 41
-        y: 8
+        y: 16
         width: 14
         height: 12
       alignment: 0
@@ -162,20 +162,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 2c204d3008dc756c0800000000000000
-      internalID: -4154626181522259262
+      spriteID: 9bcf8ca7fbaab1800800000000000000
+      internalID: 584248316050078905
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: walking_2
+      name: enemy_attacking_2
       rect:
         serializedVersion: 2
         x: 73
-        y: 10
+        y: 16
         width: 14
-        height: 12
+        height: 13
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -183,81 +183,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 41cae3adbb40af890800000000000000
-      internalID: -7423615830899905516
+      spriteID: ecb4125fbb44a33a0800000000000000
+      internalID: -6684955122815906866
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: walking_3
+      name: enemy_attacking_3
       rect:
         serializedVersion: 2
         x: 105
-        y: 12
-        width: 14
-        height: 12
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: e6daf411d55260830800000000000000
-      internalID: 4036955197636849006
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: walking_4
-      rect:
-        serializedVersion: 2
-        x: 138
-        y: 12
-        width: 12
-        height: 13
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 1318efa1dfa6c1290800000000000000
-      internalID: -7918336409512017615
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: walking_5
-      rect:
-        serializedVersion: 2
-        x: 169
-        y: 11
-        width: 14
-        height: 12
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 1ae1f3967d8e95110800000000000000
-      internalID: 1250286383453380257
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: walking_6
-      rect:
-        serializedVersion: 2
-        x: 201
-        y: 9
+        y: 16
         width: 14
         height: 13
       alignment: 0
@@ -267,20 +204,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 5a35289efcef350f0800000000000000
-      internalID: -1129278912610544731
+      spriteID: 52f2fe0e31009d570800000000000000
+      internalID: 8491818657761931045
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: walking_7
+      name: enemy_attacking_4
       rect:
         serializedVersion: 2
-        x: 233
-        y: 8
+        x: 137
+        y: 16
         width: 14
-        height: 10
+        height: 13
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -288,20 +225,41 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e591ff718d38e6a90800000000000000
-      internalID: -7318767380291708578
+      spriteID: 37263f529feca1680800000000000000
+      internalID: -8783480553753845133
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: walking_8
+      name: enemy_attacking_5
       rect:
         serializedVersion: 2
-        x: 264
-        y: 8
+        x: 168
+        y: 16
+        width: 15
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6126fc0c44ff25010800000000000000
+      internalID: 1176283123454796310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_attacking_6
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 16
         width: 16
-        height: 9
+        height: 15
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -309,20 +267,62 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 95bea0218db9f9280800000000000000
-      internalID: -9034330975163978919
+      spriteID: 394499315c270d430800000000000000
+      internalID: 3805667875891004563
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: walking_9
+      name: enemy_attacking_7
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 16
+        width: 22
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e4ea2d48d20cf380800000000000000
+      internalID: -8936264432579058456
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_attacking_8
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 16
+        width: 23
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c89835b4a35693260800000000000000
+      internalID: 7077799590435719564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_attacking_9
       rect:
         serializedVersion: 2
         x: 297
-        y: 8
+        y: 16
         width: 14
-        height: 11
+        height: 12
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -330,8 +330,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: c4bff0c7b95345bd0800000000000000
-      internalID: -2642428139442013364
+      spriteID: 349ecc1581cc2b170800000000000000
+      internalID: 8192835076964018499
       vertices: []
       indices: 
       edges: []
