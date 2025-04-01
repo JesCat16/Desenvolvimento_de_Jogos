@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class playerMovement : MonoBehaviour
 {
@@ -13,6 +14,8 @@ public class playerMovement : MonoBehaviour
     public LayerMask ground;
     private Animator animator;
     private bool isFasingRight;
+    public RawImage background;
+    private float react = 0f;
 
     // Start is called before the first frame update
     void Start()
@@ -20,6 +23,7 @@ public class playerMovement : MonoBehaviour
         isFasingRight = false;
         animator = GetComponent<Animator>();
         rb = GetComponent<Rigidbody2D>();
+        background.uvRect = new Rect(react, 0, 1, 1);
     }
 
     // Update is called once per frame
@@ -37,6 +41,7 @@ public class playerMovement : MonoBehaviour
         if (Move != 0)
         {
             animator.SetBool("isWalking", true);
+            MoveBack(Move);
         }
         else
         {
@@ -79,5 +84,11 @@ public class playerMovement : MonoBehaviour
     private void OnDrawGizmos()
     {
         Gizmos.DrawWireCube(transform.position - transform.up * seeGround, collisionGround);
+    }
+
+    void MoveBack(float Movement)
+    {
+        background.uvRect = new Rect(react + Movement/5000, 0, 1, 1);
+        react = background.uvRect.x;
     }
 }
