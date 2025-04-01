@@ -8,6 +8,7 @@ public class enemyMovement : MonoBehaviour
     public GameObject pontoB;
     private Rigidbody2D rb;
     private Transform pontoAtual;
+    private Animator animator;
     private float speed = 2.5f;
     
     // Start is called before the first frame update
@@ -15,6 +16,8 @@ public class enemyMovement : MonoBehaviour
     {
          rb = GetComponent<Rigidbody2D>();
          pontoAtual = pontoB.transform;
+         animator = GetComponent<Animator>();
+         HitCheck.hit += killed;
     }
 
     public void Flip()
@@ -47,6 +50,11 @@ public class enemyMovement : MonoBehaviour
             Flip();
             pontoAtual = pontoB.transform;
         }
+    }
+
+    public void killed()
+    {
+        animator.SetBool("isDead", true);
     }
 
 }

@@ -346,7 +346,17 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      walkingTrue_0: 9216928899628334623
+      walkingTrue_1: 3930464362521252983
+      walkingTrue_2: -2256791727956134681
+      walkingTrue_3: -3369908595047850920
+      walkingTrue_4: -1695314534644757363
+      walkingTrue_5: -7145041368989087585
+      walkingTrue_6: -3898464261514906233
+      walkingTrue_7: 7199379481696911442
+      walkingTrue_8: 4399015927275878456
+      walkingTrue_9: 222805141086757614
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
