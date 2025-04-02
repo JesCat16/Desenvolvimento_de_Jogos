@@ -5,11 +5,12 @@ using UnityEngine;
 public class HitCheck : MonoBehaviour
 {
     public static System.Action hit;
-    private void OnTriggerEntre2d(Collider2D collision)
+    public Animator animator;
+    private void OnTriggerEnter2D(Collider2D collision)
     {
         if(collision.GetComponent<enemycheck>())
         {
-            hit.Invoke();
+            animator.SetBool("isDead", true);
         }
     }
 }

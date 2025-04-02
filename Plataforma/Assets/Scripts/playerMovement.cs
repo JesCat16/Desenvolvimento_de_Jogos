@@ -9,14 +9,23 @@ public class playerMovement : MonoBehaviour
     private float Move;
     public float speed;
     public float jump;
+
     public Vector2 collisionGround;
     public float seeGround;
     public LayerMask ground;
+
     private Animator animator;
+
     private bool isFasingRight;
+
     public RawImage background;
     private float react = 0f;
 
+    public float KnockbackForce;
+    public float KnockbackTime;
+    public float KnockbackCounter;
+
+    public bool knockbackFromRight;
     // Start is called before the first frame update
     void Start()
     {
@@ -31,7 +40,23 @@ public class playerMovement : MonoBehaviour
     {
         Move = Input.GetAxisRaw("Horizontal");
 
-        rb.velocity = new Vector2(Move * speed, rb.velocity.y);
+        if(KnockbackCounter <= 0)
+        {
+            rb.velocity = new Vector2(Move * speed, rb.velocity.y);
+        }
+        else
+        {
+            if (knockbackFromRight)
+            {
+                rb.velocity = new Vector2(-KnockbackForce, KnockbackForce);
+            }
+            if (!knockbackFromRight)
+            {
+                rb.velocity = new Vector2(KnockbackForce, KnockbackForce);
+            }
+            KnockbackCounter -= Time.deltaTime;
+        }
+
 
         if(Input.GetButtonDown("Jump") && isInGround())
         {

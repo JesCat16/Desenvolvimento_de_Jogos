@@ -17,7 +17,6 @@ public class enemyMovement : MonoBehaviour
          rb = GetComponent<Rigidbody2D>();
          pontoAtual = pontoB.transform;
          animator = GetComponent<Animator>();
-         HitCheck.hit += killed;
     }
 
     public void Flip()
@@ -50,11 +49,6 @@ public class enemyMovement : MonoBehaviour
             Flip();
             pontoAtual = pontoB.transform;
         }
-    }
-
-    public void killed()
-    {
-        animator.SetBool("isDead", true);
     }
 
 }
