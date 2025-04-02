@@ -20,7 +20,7 @@ public class enemyDamage : MonoBehaviour
             {
                 player.knockbackFromRight = false;
             }
-                damaged.Invoke();
+            damaged.Invoke();
         }
     }
 }

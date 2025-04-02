@@ -26,6 +26,7 @@ public class playerMovement : MonoBehaviour
     public float KnockbackCounter;
 
     public bool knockbackFromRight;
+    public static System.Action addCoin;
     // Start is called before the first frame update
     void Start()
     {
@@ -115,5 +116,22 @@ public class playerMovement : MonoBehaviour
     {
         background.uvRect = new Rect(react + Movement/5000, 0, 1, 1);
         react = background.uvRect.x;
+    }
+
+    void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("noGround"))
+        {
+            animator.SetBool("isDead", true);
+        }
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.CompareTag("Coin"))
+        {
+            addCoin.Invoke();
+            Destroy(collision.gameObject);
+        }
     }
 }
