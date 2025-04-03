@@ -7,6 +7,7 @@ public class ScenesManager : MonoBehaviour
 {
     private bool Lose = false;
     private bool next = false;
+    
     private void Start()
     {
         playerDeath.playerDeathAction += GameOver;
@@ -16,17 +17,17 @@ public class ScenesManager : MonoBehaviour
     void Update()
     {
         Scene scene = SceneManager.GetActiveScene();
-
         if (next == true)
         {
-            if (scene.name == "Fase01")
-            {
-                SceneManager.LoadScene("Fase02");
-            }
-            else if (scene.name == "Fase02")
-            {
-                SceneManager.LoadScene("Win");
-            }
+            
+                if (scene.name == "Fase01")
+                {
+                    SceneManager.LoadScene("Fase02");
+                }
+                else if (scene.name == "Fase02")
+                {
+                    SceneManager.LoadScene("Win");
+                }
         }
         if (Lose == true)
         {
@@ -52,6 +53,10 @@ public class ScenesManager : MonoBehaviour
     }
     private void nextFase()
     {
-        next = true;
+        GameObject[] gos = GameObject.FindGameObjectsWithTag("Coin");
+        if (gos.Length == 0)
+        {
+            next = true;
+        }
     }
 }
