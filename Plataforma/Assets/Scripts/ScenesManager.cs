@@ -7,11 +7,13 @@ public class ScenesManager : MonoBehaviour
 {
     private bool Lose = false;
     private bool next = false;
-    
+    private bool restart = false;
+
     private void Start()
     {
         playerDeath.playerDeathAction += GameOver;
         portal.portalAction += nextFase;
+        RestartForWinAndLose.restartAction += Restart;
     }
 
     void Update()
@@ -19,7 +21,6 @@ public class ScenesManager : MonoBehaviour
         Scene scene = SceneManager.GetActiveScene();
         if (next == true)
         {
-            
                 if (scene.name == "Fase01")
                 {
                     SceneManager.LoadScene("Fase02");
@@ -35,17 +36,19 @@ public class ScenesManager : MonoBehaviour
         }
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            if (scene.name == "Win" || scene.name == "Lose")
-            {
-                SceneManager.LoadScene("Tutorial");
-            }
-            else if (scene.name == "Tutorial")
+            if (scene.name == "Tutorial")
             {
                 SceneManager.LoadScene("Fase01");
             }
-
         }
-        
+        if (scene.name == "Win" || scene.name == "Lose")
+        {
+            if (restart == true)
+            {
+                restart = false;
+                SceneManager.LoadScene("Tutorial");
+            }
+        }
     }
     private void GameOver()
     {
@@ -58,5 +61,9 @@ public class ScenesManager : MonoBehaviour
         {
             next = true;
         }
+    }
+    private void Restart()
+    {
+        restart = true;
     }
 }
