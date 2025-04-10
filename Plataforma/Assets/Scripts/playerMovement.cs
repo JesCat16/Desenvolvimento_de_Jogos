@@ -39,6 +39,13 @@ public class playerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (DialogManager.Instance.isTalking)
+        {
+            Move = 0f;
+            animator.SetBool("isWalking", false);
+            return;
+        }
+
         Move = Input.GetAxisRaw("Horizontal");
 
         if(KnockbackCounter <= 0)
